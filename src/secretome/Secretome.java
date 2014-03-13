@@ -51,7 +51,7 @@ public class Secretome
 
         FileWriter fw = new FileWriter(outfile.getAbsoluteFile());
         BufferedWriter bw = new BufferedWriter(fw);
-        bw.write("go_term\tdescription\tsecretome_genes\tnon_secretome_genes\tprob of combination\texpected\tpopulation" + System.getProperty("line.separator"));
+        bw.write("go_term\tdescription\tsecretome_genes\tnon_secretome_genes\tproportion secretome\tcombined probability\tpopulation" + System.getProperty("line.separator"));
         HashMap<String, ArrayList<String>> goMappings = new HashMap<>();
         //read in the protein ids for the secretome and add them to an array list
         Scanner s = new Scanner(SecretomeList);
